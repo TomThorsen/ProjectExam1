@@ -41,9 +41,13 @@ function createLaunches(result) {
         launchTypeCont.innerHTML += "<p><i>Location: </i>" + result.launches[i].location.name; + "</p>";
         launchTypeCont.innerHTML += "<p><i>Location: </i>" + result.launches[i].location.pads[0].name; + "</p>";
 
-        launchCompanyCont.innerHTML += "<p><i>Payload Name:</i> " + result.launches[i].missions[0].name; + "</p>";
-        launchCompanyCont.innerHTML += "<p><i>Payload Type:</i> " + result.launches[i].missions[0].typeName; + "</p>";
-
+        if (result.launches[i].missions[0] === undefined) {
+            launchCompanyCont.innerHTML += "<p><i>Payload Name:</i> " + "N/A" + "</p>";
+            launchCompanyCont.innerHTML += "<p><i>Payload Type:</i> " + "N/A" + "</p>";
+        } else {
+            launchCompanyCont.innerHTML += "<p><i>Payload Name:</i> " + result.launches[i].missions[0].name; + "</p>";
+            launchCompanyCont.innerHTML += "<p><i>Payload Type:</i> " + result.launches[i].missions[0].typeName; + "</p>";
+        }
         document.getElementById('LaunchScriptContainer').appendChild(launchHeader);
         document.getElementById('LaunchScriptContainer').appendChild(launchContainerBox);
         document.getElementById('LaunchScriptContainer').appendChild(launchContainer);
