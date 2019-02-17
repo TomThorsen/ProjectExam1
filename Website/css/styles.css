@@ -1,0 +1,632 @@
+body {
+    margin: 0;
+    background-color: #181923;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+    color: #005288;
+    text-align: center;
+}
+
+/* NAVBAR */
+.NavBar {
+    display: flex;
+    justify-content: center;
+    color: #515151;
+    font-weight: lighter;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+}
+.active {
+    font-weight: 600;
+}
+.NavBarContent {
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 17px;
+    padding-left: 0px;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+}
+li a:hover {
+    font-weight: 600;
+}
+.phoneMenu {
+    display: none;
+}
+.fa-bars {
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right:0;
+    font-size: 1.4em;
+}
+.dropdown-content a {
+    color: #515151;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #515151;
+    color: white;
+}
+.show {
+    display:block;
+}
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: #515151;
+    font-weight: lighter;
+    background-color: white;
+    margin-top: 50px;
+    font-size: 0.8em;
+}
+.footerSocial {
+    justify-content: center;
+    display: flex;
+}
+.footerSocialLogo {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.copyRightInfo {
+    justify-content: center;
+    display: flex;
+}
+.imageLink:hover {
+    filter: invert(100%);
+}
+
+/* Responsive */
+
+@media (max-width: 1080px) {
+    .homeContent {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .newsArticle {
+        margin-right: 0px !important;
+        width: 100% !important;
+        height: auto !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        background-color: #181923 !important;
+    }
+    .newsText {
+        background-color: white !important;
+    }
+    .newsImage {
+        display: block !important;
+        width: 1080px !important;
+        height: 344px !important;
+        overflow: hidden !important;
+        position: relative !important;
+        -o-object-fit: contain !important;
+        object-fit: cover !important;
+    }
+    ul {
+        font-size: 1.4em;
+        width: 400px;
+        margin-right: 10px;
+        margin-top: 6px;
+    }
+
+    .homeRightBox {
+        width: 100% !important;
+    }
+    .homeLinks {
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+    .homeRSS {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .rssArticle {
+        width: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .launchCont {
+        justify-content: center !important;
+    }
+    .mediaImgCont {
+        justify-content: center !important;
+    }
+    .mediaImg {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .aboutHeader {
+        font-size: 1.5em !important;
+    }
+    form {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-content: center !important;
+        flex-direction: column;
+    }
+    textarea {
+        width: 370px !important;
+        margin-right: 0px !important;
+    }
+    input {
+        margin-right: 0px !important;
+    }
+    .contactRightBox {
+        margin-right: 20px !important;
+    }
+    input[type="button"] {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .phoneMenu {
+        display: inline-block;
+        position: relative;
+    }
+    .fa-bars:hover, .fa-bars:focus {
+        color: #005288;
+        cursor: pointer;
+    }
+    .navLinks {
+        display: none;
+    }
+    .newsImage {
+        width: auto !important;
+        height: 250px !important;
+    }
+    .linkLogo {
+        width: auto !important;
+        height: 40px !important;
+    }
+    .countDownTimer {
+        font-size: 1.1em;
+    }
+    .launchCont {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    .youtubeHeader {
+        margin-top: 20px !important;
+        font-size: 1.1em !important;
+    }
+    .youtubeTextPara {
+        font-size: 0.9em !important;
+    }
+    .aboutHeader {
+        font-size: 1.3em !important;
+    }
+    .contactRightBox {
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-top: 30px !important;
+    }
+    .contactInfo {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-around !important;
+        text-align: left !important;
+        padding-bottom: 20px !important;
+    }
+    .contactInfoHeader {
+        font-size: 0.8em !important;
+    }
+    .contactInfoPara {
+        font-size: 0.9em !important;
+    }
+}
+@media (max-width: 380px) {
+    .navlogo {
+        width: 250px;
+        height: auto;
+    }
+    .fa-bars {
+        font-size: 30px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    .dropdown-content {
+        font-size: 1em;
+    }
+    .newsImage {
+        width: auto !important;
+        height: 150px !important;
+    }
+    .homeLinks {
+        flex-wrap: wrap !important;
+
+    }
+    .linkLogo {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .countDownTimer {
+        font-size: 0.9em;
+    }
+    .rssArticle {
+        width: 120px;
+    }
+    .aboutHeader {
+        font-size: 1.1em !important;
+    }
+    .homeContentBox {
+        width: 100% !important;
+    }
+    form {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    textarea {
+        width: 310px !important;
+    }
+    input[type=text] {
+        width: 320px !important;
+    }
+    input[type=number] {
+        width: 320px !important;
+    }
+    input[type=email] {
+        width: 320px !important;
+    }
+    .contactInfo {
+        flex-direction: column !important;
+        align-content: center !important;
+    }
+}
+
+/* Home Page */
+
+.topContentBox {
+    display: flex;
+    justify-content: center;
+}
+.topContent {
+    width: 1100px;
+    background-color: white;
+    z-index: -2;
+    text-align: center;
+    font-size: 1.5em;
+}
+.fullWidthImage {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.countDownTimer {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #005288;
+}
+.homeContentBox {
+    display: flex;
+    justify-content: center;
+}
+.homeContent {
+    width: 1100px;
+    justify-content: space-between;
+    display: inline-flex;
+}
+.newsArticle {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 20px;
+    max-width: 900px;
+    margin-right: 20px;
+}
+.newsImage {
+    max-width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+}
+.newsPara {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.homeRightBox {
+    width: 210px;
+    margin-top: 20px;
+}
+.homeLinks {
+    text-align: center;
+    background-color: white;
+}
+.linkLogo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.homeRSS {
+    margin-top: 20px;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.rssArticle {
+    font-size: 0.8em;
+}
+.rssArtCont {
+    margin-left: 10px;
+}
+.rssHeader {
+    color: #005288;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.rssFeedText {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.rssFeedSource {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/* Launch page */
+.buttonBox {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.buttonCont {
+    width: 1100px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.spacexLaunchButton {
+    background-color: white;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.allLaunchButton {
+    background-color: white;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.buttonText {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.launchCompHeader {
+    color: white;
+    padding-top: 20px;
+}
+.launchBox {
+    display: flex;
+    justify-content: center;
+}
+.launchCont {
+    width: 1100px;
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #515151;
+    flex-wrap: wrap;
+}
+.launchTime {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.launchTime p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.launchType {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.launchType p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.launchCompany {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.launchCompany p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Media */
+.mediaContentBox {
+    display: flex;
+    justify-content: center;
+}
+.mediaContent {
+    width: 1100px;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+.mediaYTimg {
+    width: 100%;
+    position: relative;
+}
+
+.mediaContentBox a:hover {
+    opacity:0.7 !important;
+    cursor:pointer;
+}
+.youtubeHeader {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+.youtubeTextPara {
+    font-size: 1.3em;
+}
+.youtubeInfoBox {
+    flex-grow:1;
+    background-color: white;
+    color: #515151;
+    text-align: center;
+}
+.mediaImgContBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.mediaImgCont {
+    display: flex;
+    width: 1100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mediaImg {
+    padding-top: 30px;
+}
+.mediaImg p {
+    color: white;
+    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* About page */
+
+.aboutHeader {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.aboutPara {
+    font-size: 0.8em;
+    text-align: left;
+    margin: 10px 50px 20px;
+}
+
+/* Contact Page */
+
+.contactHeader {
+    color: white;
+    font-size: 2.3em;
+    text-align: center;
+}
+.contactBox {
+    align-content: center;
+    flex: 1;
+}
+.topContentContact {
+    width: 1100px;
+    z-index: -2;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+input[type=text] {
+    width: 380px;
+    height: 30px;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+input[type=number] {
+    width: 380px;
+    height: 30px;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+input[type=email] {
+    width: 380px;
+    height: 30px;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+textarea {
+    width: 87.4%;
+    margin-right: 20px;
+    height: 200px;
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: #515151;
+}
+input[type=button] {
+    background-color: white;
+    border-style: none;
+    width: 150px;
+    height: 30px;
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    float: right;
+    margin-right: 100px;
+    color: #515151;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin-left: 200px;
+}
+input[type=button]:hover {
+    background-color: #515151;
+    color: white;
+    cursor:pointer;
+}
+.contactInfo {
+    text-align: center;
+    background-color: white;
+    color: #515151;
+    padding-bottom: 10px;
+}
+.contactAddress {
+    padding-top: 14px;
+}
+.contactInfoHeader {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.contactInfoPara {
+    margin: 0;
+}
+.contactRightBox {
+    width: 210px;
+}
+.spacer {
+    height: 11px;
+}

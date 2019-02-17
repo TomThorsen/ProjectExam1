@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>SpaceX Home</title>
+    <meta name="Description" content="SpaceX - Home">
+    <script type="text/javascript" src="js/dropdown.js"></script>
+</head>
+<body>
+
+<nav class="NavBar">
+    <div class="NavBarContent">
+        <a class="navbar-brand" href="./index.html"><img src="img/spacex_logo.png" alt="Spacex Logo" class="navlogo"></a>
+        <div class="navLinks">
+            <ul class="navbar-nav">
+                <li class="active">
+                    <a class="nav-link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./launches.html">LAUNCHES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./media.html">MEDIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="phoneMenu">
+            <i onclick="dropdownMenuFnc()" class="fas fa-bars dropbtn"></i>
+            <div id="phoneDropdown" class="dropdown-content">
+                <a class="nav-link active" href="./index.html">HOME</a>
+                <a class="nav-link" href="./launches.html">LAUNCHES</a>
+                <a class="nav-link" href="./media.html">MEDIA</a>
+                <a class="nav-link" href="./about.html">ABOUT</a>
+                <a class="nav-link" href="./contact.html">CONTACT</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="topContentBox">
+    <div class="topContent">
+       <img src="img/home_banner_img.png" alt="Image of inside view on a Dragon Capsule" class="fullWidthImage">
+       <h2 class="countDownTimer">NEXT LAUNCH IN: 5d 20h 22m 33s</h2>
+    </div>
+</div>
+
+<div class="homeContentBox">
+    <div class="homeContent">
+        <div class="homeNews">
+            <div class="newsArticle">
+                <img src="img/news_mobile_1_img.png" alt="Image of falcon booster landing" class="newsImage">
+                <div class="newsText">
+                    <h1>Falcon Heavy successful landing</h1>
+                    <p class="newsPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="newsArticle">
+                <img src="img/news_mobile_2_img.png" alt="Image of Spacex Dragon Capsule" class="newsImage">
+                <div class="newsText">
+                    <h1>SpaceX unveils the Dragon Capsule</h1>
+                    <p class="newsPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="newsArticle">
+                <img src="img/news_mobile_3_img.png" alt="3D rendering of BFR landed on another planet" class="newsImage">
+                <div class="newsText">
+                    <h1>The BFR undergoes design changes</h1>
+                    <p class="newsPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="homeRightBox">
+            <div class="homeLinks">
+                <a class="imageLink" href="https://www.nasa.gov/"><img src="img/nasa_logo.png" alt="NASA Logo" class="linkLogo"></a>
+                <a class="imageLink" href="https://www.esa.int/ESA"><img src="img/esa_logo.png" alt="ESA Logo" class="linkLogo"></a>
+                <a class="imageLink" href="https://www.jpl.nasa.gov/"><img src="img/jpl_logo.png" alt="JPL Logo" class="linkLogo"></a>
+                <a class="imageLink" href="https://www.nasa.gov/mission_pages/station/main/index.html"><img src="img/iss_logo.png" alt="ISS Logo" class="linkLogo"></a>
+            </div>
+            <div class="homeRSS">
+                <a class="rssArticle" href="https://www.nasa.gov/">
+                    <div class="rssArtCont">
+                        <h3 class="rssHeader">HUBBLE NEW DISCOVERY</h3>
+                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <p class="rssFeedSource">Source: nasa.gov</p>
+                    </div>
+                </a>
+                <a class="rssArticle" href="https://www.spacex.com/">
+                    <div class="rssArtCont">
+                        <h3 class="rssHeader">NEW SPACEX LAUNCH</h3>
+                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <p class="rssFeedSource">Source: spacex.com</p>
+                    </div>
+                </a>
+                <a class="rssArticle" href="https://www.esa.int/">
+                    <div class="rssArtCont">
+                        <h3 class="rssHeader">ESA GOES FOR THE SUN</h3>
+                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <p class="rssFeedSource">Source: esa.int</p>
+                     </div>
+                </a>
+                <a class="rssArticle" href="https://www.nasa.gov/">
+                    <div class="rssArtCont">
+                        <h3 class="rssHeader">HUBBLE NEW DISCOVERY</h3>
+                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <p class="rssFeedSource">Source: nasa.gov</p>
+                    </div>
+                </a>
+                <a class="rssArticle" href="https://www.spacex.com/">
+                    <div class="rssArtCont">
+                        <h3 class="rssHeader">NEW SPACEX LAUNCH</h3>
+                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <p class="rssFeedSource">Source: spacex.com</p>
+                    </div>
+                </a>
+                <a class="rssArticle" href="https://www.esa.int/">
+                    <div class="rssArtCont">
+                        <h3 class="rssHeader">ESA GOES FOR THE SUN</h3>
+                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <p class="rssFeedSource">Source: esa.int</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="FooterContent">
+        <div class="navLinks">
+            <ul class="navbar-nav">
+                <li class="active">
+                    <a class="nav-link" href="./index.html">HOME</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./launches.html">LAUNCHES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./media.html">MEDIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footerSocial">
+            <a class="imageLink" href="https://twitter.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="img/twitter.png" alt="Twitter Logo" class="footerSocialLogo"></a>
+            <a class="imageLink" href="https://www.facebook.com/groups/spacexgroup/"><img src="img/facebook.png" alt="Facebook Logo" class="footerSocialLogo"></a>
+            <a class="imageLink" href="https://www.linkedin.com/company/spacex/"><img src="img/linkedin.png" alt="Linkedin Logo" class="footerSocialLogo"></a>
+        </div>
+        <div class="copyRightInfo">
+            <p class="copyright">
+                ©2019 SpaceX
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
