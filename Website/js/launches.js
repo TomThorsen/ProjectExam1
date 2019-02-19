@@ -25,7 +25,7 @@ function createLaunches(result) {
 
         launchInfoCont.appendChild(launchHeaderCont);
 
-        launchInfoCont.innerHTML += '<a class="launchImgLink" href="' + result.launches[i].rocket.imageURL + '">' + '<img src="' + result.launches[i].rocket.imageURL + '"' + 'alt="' + result.launches[i].rocket.name + '"' + 'class="launchImage">';
+        launchInfoCont.innerHTML += '<a class="launchImgLink" href="' + result.launches[i].rocket.imageURL + '">' + '<img src="' + result.launches[i].rocket.imageURL + '" ' + 'alt="' + result.launches[i].rocket.name + '" ' + 'class="launchImage">';
 
         launchInfoCont.innerHTML += "<p>Time: " + result.launches[i].windowstart; + "</p>";
 

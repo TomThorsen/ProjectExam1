@@ -317,6 +317,7 @@ footer {
     z-index: -2;
     text-align: center;
     font-size: 1.5em;
+
 }
 .fullWidthImage {
     width: 100%;
@@ -328,7 +329,7 @@ footer {
     padding-top: 5px;
     padding-bottom: 5px;
     color: #005288;
-}
+    }
 .homeContentBox {
     display: flex;
     justify-content: center;
@@ -429,6 +430,8 @@ footer {
 .launchCompHeader {
     color: #005288;
     text-align: center;
+    margin: 10px;
+    padding: 0;
 }
 .launchBox {
     display: flex;
@@ -468,9 +471,7 @@ footer {
     cursor: pointer;
 }
 .launchInfo p {
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 /* Media */
