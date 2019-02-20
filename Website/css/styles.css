@@ -6,6 +6,8 @@ body {
 h1 {
     color: #005288;
     text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
 }
 
 /* NAVBAR */
@@ -188,6 +190,9 @@ footer {
         margin: 0 !important;
         padding: 0 !important;
     }
+    .submitCont {
+        width: 383px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -264,7 +269,6 @@ footer {
     }
     .homeLinks {
         flex-wrap: wrap !important;
-
     }
     .linkLogo {
         margin-left: 10px !important;
@@ -285,23 +289,34 @@ footer {
     form {
         display: flex !important;
         flex-wrap: wrap !important;
-        justify-content: center !important;
-    }
-    textarea {
-        width: 310px !important;
-    }
-    input[type=text] {
-        width: 320px !important;
-    }
-    input[type=number] {
-        width: 320px !important;
-    }
-    input[type=email] {
-        width: 320px !important;
+        width: 100% !important;
     }
     .contactInfo {
         flex-direction: column !important;
         align-content: center !important;
+    }
+    .inputField {
+        width: 320px !important;
+        margin-right: 0 !important;
+    }
+    .input {
+        width: 320px !important;
+        margin-right: 0 !important;
+    }
+    input[type="text"] {
+        width: 100% !important;
+    }
+    input[type="email"] {
+        width: 100% !important;
+    }
+    input[type="number"] {
+        width: 100% !important;
+    }
+    textarea {
+        width: 310px !important;
+    }
+    .submitCont {
+        width: 323px !important;
     }
 }
 
@@ -564,7 +579,7 @@ input[type=text] {
     height: 30px;
     text-align: center;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 1.2em;
 }
 input[type=number] {
@@ -572,7 +587,7 @@ input[type=number] {
     height: 30px;
     text-align: center;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 1.2em;
 }
 input[type=email] {
@@ -580,11 +595,11 @@ input[type=email] {
     height: 30px;
     text-align: center;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 1.2em;
 }
 textarea {
-    width: 87.4%;
+    width: 770px;
     margin-right: 20px;
     height: 200px;
     font-size: 1.2em;
@@ -594,22 +609,22 @@ textarea {
     margin-bottom: 20px;
     color: #515151;
 }
-input[type=button] {
+.button {
     background-color: white;
     border-style: none;
     width: 150px;
     height: 30px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
-    float: right;
-    margin-right: 100px;
     color: #515151;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-    margin-left: 200px;
+    text-align: center;
+    padding-top: 5px;
+
 }
-input[type=button]:hover {
+.button:hover {
     background-color: #515151;
     color: white;
     cursor:pointer;
@@ -636,4 +651,24 @@ input[type=button]:hover {
 }
 .spacer {
     height: 11px;
+}
+.validationError {
+    width: 380px;
+    color: red;
+}
+.inputField{
+    width: 380px;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 2px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.submitCont {
+    justify-content: flex-end;
+    display: flex;
+    width: 783px;
 }

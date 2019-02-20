@@ -15,7 +15,7 @@ function createLaunches(result) {
 
     for (var i = 0; i < result.launches.length; i++) {
 
-        var launchInfoCont = document.createElement('div');
+        var launchInfoCont = document.createElement('article');
         launchInfoCont.className = 'launchInfo';
 
         var launchHeaderCont = document.createElement('h3');

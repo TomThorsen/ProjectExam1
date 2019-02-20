@@ -47,23 +47,35 @@
     </div>
 </nav>
 
-<div class="topContentBox">
+<section class="topContentBox">
     <div class="topContentContact">
         <img src="img/contact_img_1.png" alt="Image of Spacex control room" class="fullWidthImage">
     </div>
-</div>
-<h1 class="contactHeader">CONTACT SPACEX</h1>
-<div class="homeContentBox">
+</section>
 
+<h1 class="contactHeader">CONTACT SPACEX</h1>
+
+<section class="homeContentBox">
     <div class="homeContent">
         <div class="contactBox">
             <form>
-                <input type="text" name="firstname" placeholder="FIRST NAME">
-                <input type="text" name="lastname" placeholder="LAST NAME">
-                <input type="number" name="phonenumber" placeholder="PHONE NUMBER">
-                <input type="email" name="emailadress" placeholder="EMAIL ADDRESS">
-                <textarea name="contactText" placeholder="Write your message here..."></textarea>
-                <input type="button" onclick="" value="SUBMIT">
+                <div class="inputField" id="firstNameErr">
+                    <input type="text" id="firstNameInput" name="firstname" placeholder="FIRST NAME">
+                </div>
+                <div class="inputField" id="lastNameErr">
+                    <input type="text" id="lastNameInput" name="lastname" placeholder="LAST NAME">
+                </div>
+                <div class="inputField" id="phoneErr">
+                    <input type="number" id="phoneInput" name="phonenumber" placeholder="PHONE NUMBER">
+                </div>
+                <div class="inputField" id="emailErr">
+                    <input type="email" id="emailInput" name="emailadress" placeholder="EMAIL ADDRESS">
+                </div>
+                    <textarea name="contactText" placeholder="Write your message here..."></textarea>
+                <div class="submitCont">
+                    <div id="submitButton" class="button">SUBMIT</div>
+                </div>
+
             </form>
 
         </div>
@@ -93,7 +105,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 
 
@@ -131,6 +143,8 @@
             </p>
         </div>
     </div>
+
+    <script type="text/javascript" src="js/validation.js"></script>
 </footer>
 </body>
 </html>
