@@ -10,6 +10,7 @@
     <title>SpaceX Media</title>
     <meta name="Description" content="SpaceX - Media">
     <script type="text/javascript" src="js/dropdown.js"></script>
+
 </head>
 <body>
 
@@ -56,43 +57,47 @@
         </div>
     </a>
 </section>
-
+<div id="mediaModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImgContent">
+    <div id="caption"></div>
+</div>
 <section class="mediaImgContBox">
     <div class="mediaImgCont">
         <div class="mediaImg">
-            <img src="img/media/orbit_thumbnail.png" alt="Image of Dragon capsule in orbit" class="mediaImage">
+            <img src="img/media/orbit_fullsize.jpg" alt="Dragon capsule in orbit" class="mediaImage" style="width:100%;max-width:340px">
             <p>Dragon capsule in orbit</p>
         </div>
         <div class="mediaImg">
-            <img src="img/media/heavy_thumbnail.png" alt="Image of Falcon Heavy waiting for launch" class="mediaImage">
+            <img src="img/media/heavy_fullsize.jpg" alt="Falcon Heavy waiting for launch" class="mediaImage" style="width:100%;max-width:340px">
             <p>Falcon Heavy waiting for launch</p>
         </div>
         <div class="mediaImg">
-            <img src="img/media/launch_thumbnail.png" alt="Image of Falcon 9 launching" class="mediaImage">
+            <img src="img/media/launch_fullsize.jpg" alt="Falcon 9 launching" class="mediaImage">
             <p>Falcon 9 launching</p>
         </div>
         <div class="mediaImg">
-            <img src="img/media/launch2_thumbnail.png" alt="Image of Falcon 9 launching" class="mediaImage">
+            <img src="img/media/launch2_fullsize.jpg" alt="Falcon 9 launching" class="mediaImage">
             <p>Falcon 9 launching</p>
         </div>
         <div class="mediaImg">
-            <img src="img/media/roadster_thumbnail.png" alt="Image of Tesla Roadster in orbit around earth" class="mediaImage">
+            <img src="img/media/roadster_fullsize.jpg" alt="Tesla Roadster in orbit around earth" class="mediaImage">
             <p>Tesla Roadster in earth orbit</p>
         </div>
         <div class="mediaImg">
-            <img src="img/media/dragon_thumbnail.png" alt="Image of Dragon capsule on display" class="mediaImage">
+            <img src="img/media/dragon_fullsize.jpg" alt="Dragon capsule on display" class="mediaImage">
             <p>Dragon capsule</p>
         </div>
         <div class="mediaImg">
-            <img src="img/media/droneship_thumbnail.png" alt="Image of Falcon booster stage landing on droneship" class="mediaImage">
+            <img src="img/media/droneship_fullsize.jpg" alt="Falcon booster stage landing on droneship" class="mediaImage">
             <p>Falcon landing on droneship</p>
         </div>
         <div class="mediaImg">
-            <img src="img/media/orbit2_thumbnail.png" alt="Image of Dragon capsule in orbit" class="mediaImage">
+            <img src="img/media/orbit2_fullsize.jpg" alt="Dragon capsule in orbit" class="mediaImage">
             <p>Dragon capsule in orbit</p>
         </div>
         <div class="mediaImg">
-            <img src="img/media/landing_thumbnail.png" alt="Image of Falcon booster stage landing" class="mediaImage">
+            <img src="img/media/landing_fullsize.jpg" alt="Falcon booster stage landing" class="mediaImage">
             <p>Falcon booster stage landing</p>
         </div>
     </div>
@@ -133,5 +138,6 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="js/mediamodal.js"></script>
 </body>
 </html>
