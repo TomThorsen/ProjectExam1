@@ -11,6 +11,7 @@
     <meta name="Description" content="SpaceX - Home">
     <script type="text/javascript" src="js/dropdown.js"></script>
     <script type="text/javascript" src="js/countdown.js"></script>
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script> <!-- Feednami RSS API -->
 </head>
 <body>
 
@@ -86,54 +87,12 @@
         </div>
         <aside class="homeRightBox">
             <div class="homeLinks">
-                <a class="imageLink" href="https://www.nasa.gov/"><img src="img/nasa_logo.png" alt="NASA Logo" class="linkLogo"></a>
-                <a class="imageLink" href="https://www.esa.int/ESA"><img src="img/esa_logo.png" alt="ESA Logo" class="linkLogo"></a>
-                <a class="imageLink" href="https://www.jpl.nasa.gov/"><img src="img/jpl_logo.png" alt="JPL Logo" class="linkLogo"></a>
-                <a class="imageLink" href="https://www.nasa.gov/mission_pages/station/main/index.html"><img src="img/iss_logo.png" alt="ISS Logo" class="linkLogo"></a>
+                <a class="OtherImageLink" href="https://www.nasa.gov/"><img src="img/nasa_logo.png" alt="NASA Logo" class="linkLogo"></a>
+                <a class="OtherImageLink" href="https://www.esa.int/ESA"><img src="img/esa_logo.png" alt="ESA Logo" class="linkLogo"></a>
+                <a class="OtherImageLink" href="https://www.jpl.nasa.gov/"><img src="img/jpl_logo.png" alt="JPL Logo" class="linkLogo"></a>
+                <a class="OtherImageLink" href="https://www.nasa.gov/mission_pages/station/main/index.html"><img src="img/iss_logo.png" alt="ISS Logo" class="linkLogo"></a>
             </div>
-            <div class="homeRSS">
-                <a class="rssArticle" href="https://www.nasa.gov/">
-                    <div class="rssArtCont">
-                        <h3 class="rssHeader">HUBBLE NEW DISCOVERY</h3>
-                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                        <p class="rssFeedSource">Source: nasa.gov</p>
-                    </div>
-                </a>
-                <a class="rssArticle" href="https://www.spacex.com/">
-                    <div class="rssArtCont">
-                        <h3 class="rssHeader">NEW SPACEX LAUNCH</h3>
-                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                        <p class="rssFeedSource">Source: spacex.com</p>
-                    </div>
-                </a>
-                <a class="rssArticle" href="https://www.esa.int/">
-                    <div class="rssArtCont">
-                        <h3 class="rssHeader">ESA GOES FOR THE SUN</h3>
-                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                        <p class="rssFeedSource">Source: esa.int</p>
-                     </div>
-                </a>
-                <a class="rssArticle" href="https://www.nasa.gov/">
-                    <div class="rssArtCont">
-                        <h3 class="rssHeader">HUBBLE NEW DISCOVERY</h3>
-                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                        <p class="rssFeedSource">Source: nasa.gov</p>
-                    </div>
-                </a>
-                <a class="rssArticle" href="https://www.spacex.com/">
-                    <div class="rssArtCont">
-                        <h3 class="rssHeader">NEW SPACEX LAUNCH</h3>
-                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                        <p class="rssFeedSource">Source: spacex.com</p>
-                    </div>
-                </a>
-                <a class="rssArticle" href="https://www.esa.int/">
-                    <div class="rssArtCont">
-                        <h3 class="rssHeader">ESA GOES FOR THE SUN</h3>
-                        <p class="rssFeedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                        <p class="rssFeedSource">Source: esa.int</p>
-                    </div>
-                </a>
+            <div id="homepageRSS" class="homeRSS">
             </div>
         </aside>
     </div>
@@ -170,6 +129,9 @@
             </p>
         </div>
     </div>
+
+<script type="text/javascript" src="js/rssfeed.js"></script>
+
 </footer>
 </body>
 </html>

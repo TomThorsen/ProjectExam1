@@ -388,14 +388,23 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.OtherImageLink:hover {
+    opacity: 0.7;
+    cursor:pointer;
+}
 .homeRSS {
     margin-top: 20px;
     background-color: white;
     padding-top: 5px;
     padding-bottom: 10px;
 }
+
 .rssArticle {
     font-size: 0.8em;
+}
+.rssArtCont:hover {
+    opacity: 0.7;
+    cursor:pointer;
 }
 .rssArtCont {
     margin-left: 10px;
