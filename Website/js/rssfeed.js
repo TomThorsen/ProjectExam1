@@ -1,12 +1,12 @@
 // Fetch NASA breaking news RSS feed
-var url = 'https://www.nasa.gov/rss/dyn/breaking_news.rss'
-feednami.load(url)
-    .then(feed => {
-        var feedCount = 0;
-        for(let entry of feed.entries){
-            feedCount = feedCount + 1;
-            // Control how many articles are displayed
-            if (feedCount < 9) {
+google.load("feeds", "1");
+
+function initialize() {
+    var feed = new google.feeds.Feed("https://www.nasa.gov/rss/dyn/breaking_news.rss");
+    feed.load(function(result) {
+        if (!result.error) {
+            for (var i = 0; i < 8; i++) {
+                var entry = result.feed.entries[i];
                 // Create RSS article elements
                 var rssArticle = document.createElement('a');
                 rssArticle.className = 'rssArticle';
@@ -21,9 +21,9 @@ feednami.load(url)
                 // Populate elements with information
                 rssArticle.href = entry.link;
                 rssHeader.innerHTML += entry.title;
-                var rssFeedTextShortened = entry.summary.substr(0, 170);
+                var rssFeedTextShortened = entry.contentSnippet.substr(0, 170);
                 rssFeedText.innerHTML += rssFeedTextShortened + '...';
-                rssFeedSource.innerHTML += entry.source.title;
+                rssFeedSource.innerHTML += 'NASA Breaking News';
                 // Append elements to correct containers
                 rssArticleContainer.appendChild(rssHeader);
                 rssArticleContainer.appendChild(rssFeedText);
@@ -32,4 +32,6 @@ feednami.load(url)
                 document.getElementById('homepageRSS').appendChild(rssArticle);
             }
         }
-    })
+    });
+}
+google.setOnLoadCallback(initialize);
