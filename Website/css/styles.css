@@ -321,6 +321,9 @@ footer {
     .submitCont {
         width: 323px !important;
     }
+    .validationError {
+        width: 100% !important;
+    }
 }
 
 /* Home Page */
@@ -509,6 +512,27 @@ footer {
 .launchInfo p {
     margin: 10px;
 }
+.launchTable {
+    font-size: 0.8em;
+    width: 100%;
+}
+.launchTable th {
+    width: 30%;
+}
+.launchTable td {
+    width: 70%;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.launchTable, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 
 /* Media */
 .mediaContentBox {
@@ -648,6 +672,7 @@ footer {
     color: white;
     font-size: 2.3em;
     text-align: center;
+    margin-bottom: 30px;
 }
 .contactBox {
     align-content: center;
